@@ -3,13 +3,19 @@ import os
 import tweepy
 import requests.packages.urllib3
 requests.packages.urllib3.disable_warnings()
-from secrets import *
 from datetime import datetime, timedelta
 from time import gmtime, strftime
 
 # individual bot config
 bot_username = 'FalseWiki'
 logfile_name = bot_username + ".log"
+
+# keys for bot
+C_KEY = ""
+C_SECRET = ""
+A_TOKEN = ""
+A_TOKEN_SECRET = ""
+
 def tweet_bot():
     
     def create_tweet():
